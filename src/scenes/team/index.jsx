@@ -15,20 +15,20 @@ const Team = () => {
     { field: "id", headerName: "ID" },
     {
       field: "name",
-      headerName: "Name",
+      headerName: "Имя",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
       field: "age",
-      headerName: "Age",
+      headerName: "Возраст",
       type: "number",
       headerAlign: "left",
       align: "left",
     },
     {
       field: "phone",
-      headerName: "Phone number",
+      headerName: "Телефон",
       flex: 1,
     },
     {
@@ -38,7 +38,7 @@ const Team = () => {
     },
     {
       field: "access",
-      headerName: "Access Level",
+      headerName: "Доступ",
       flex: 1,
       renderCell: ({ row: { access } }) => {
         return (
@@ -69,7 +69,7 @@ const Team = () => {
 
   return (
     <Box m="20px">
-      <Header title="TEAM" subtitle="Managing the Team Members" />
+      <Header title="КОМАНДА" subtitle="Мененджмент игроков команды" />
       <Box
         m="40px 0 0 0"
         height="75vh"

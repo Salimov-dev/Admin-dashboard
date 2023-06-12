@@ -15,20 +15,20 @@ const Contacts = () => {
 
     {
       field: "name",
-      headerName: "Name",
+      headerName: "Имя",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
       field: "age",
-      headerName: "Age",
+      headerName: "Возраст",
       type: "number",
       headerAlign: "left",
       align: "left",
     },
     {
       field: "phone",
-      headerName: "Phone number",
+      headerName: "Телефон",
       flex: 1,
     },
     {
@@ -38,24 +38,24 @@ const Contacts = () => {
     },
     {
       field: "address",
-      headerName: "Address",
+      headerName: "Адрес",
       flex: 1,
     },
     {
       field: "city",
-      headerName: "City",
+      headerName: "Город",
     },
     {
       field: "zipCode",
-      headerName: "ZipCode",
+      headerName: "Индекс",
     },
   ];
 
   return (
     <Box m="20px">
       <Header
-        title="CONTACTS"
-        subtitle="List of Contacts for Future Reference"
+        title="КОНТАКТЫ"
+        subtitle="Список контактов для дальнейшего использования"
       />
       <Box
         m="40px 0 0 0"

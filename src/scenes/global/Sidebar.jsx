@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Sidebar as ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
-import "react-pro-sidebar/dist/css/styles.css";
+import {Sidebar as ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
+// import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography, useTheme, styled } from "@mui/material";
 import { Link, NavLink } from "react-router-dom";
 import { tokens } from "../../theme";
@@ -45,10 +45,6 @@ const Sidebar = () => {
   return (
     <Box
       sx={{
-        // "& .pro-sidebar-inner": {
-        //   background: `${colors.primary[400]} !important`,
-
-        // },
         "& .ps-sidebar-container": {
           background: `${colors.primary[400]} !important`,
         },
@@ -61,9 +57,6 @@ const Sidebar = () => {
         "& .pro-inner-item": {
           padding: "5px 35px 5px 20px !important",
         },
-        // "& .pro-inner-item:hover": {
-        //   color: "#868dfb !important",
-        // },
         "& .ps-menu-button:hover": {
           color: "#868dfb !important",
           backgroundColor: "inherit !important",
@@ -71,9 +64,6 @@ const Sidebar = () => {
         "& .ps-menu-button.ps-active": {
           color: "#868dfb !important",
         },
-        // "& .pro-menu-item.active": {
-        //   color: "#6870fa !important",
-        // },
       }}
     >
       <ProSidebar collapsed={isCollapsed}>
@@ -95,7 +85,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
+                  Dashboard
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -117,15 +107,15 @@ const Sidebar = () => {
               </Box>
               <Box textAlign="center">
                 <Typography
-                  variant="h2"
+                  variant="h3"
                   color={colors.grey[100]}
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Ed Roh
+                  Салимов Руслан
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Fancy Admin
+                  Frontend developer
                 </Typography>
               </Box>
             </Box>
