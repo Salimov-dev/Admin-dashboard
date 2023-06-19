@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Sidebar as ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { Sidebar as ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 // import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography, useTheme, styled } from "@mui/material";
 import { Link, NavLink } from "react-router-dom";
@@ -216,13 +216,6 @@ const Sidebar = () => {
               title="Линейные"
               to="/line"
               icon={<TimelineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="География"
-              to="/geography"
-              icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
